@@ -15,7 +15,7 @@ function App() {
     setFilmes([]);
     setIsLoading(true);
     axios
-      .post("/getMovies", {
+      .post("https://api.migueldias.net/movienerd/getMovies", {
         addGeneros: title.addGeneros,
         score: title.score,
         titulo: title.titulo,
